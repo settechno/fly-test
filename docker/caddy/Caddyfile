@@ -1,0 +1,15 @@
+{
+	admin off
+	auto_https off
+	log
+	skip_install_trust
+}
+
+:8080 {
+	log
+	root * /var/www/html/public
+	php_fastcgi 127.0.0.1:9000
+	file_server
+	encode gzip
+	header -Server
+}

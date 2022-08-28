@@ -1,0 +1,16 @@
+{
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.1"
+  },
+  "config": {
+    "secure-http": false,
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
